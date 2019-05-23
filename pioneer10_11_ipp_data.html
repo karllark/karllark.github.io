@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Pioneer 10/11 IPP Data</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Karl D. Gordon</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Pioneer 10/11 IPP Data</h1>
+
+							<p>The Pioneer 10/11 spacecraft included an instrument called the Imaging
+								Photopolarimeter (IPP).  This instrument produced blue and red maps of the
+								full sky as the Pioneer spacecraft cruised through and beyond the
+								zodiacal dust cloud.  The data taken outside the zodiacal dust cloud
+								was used as part of my PhD thesis to determine the efficiency of the dust
+								photoluminescence feature called Extended Red Emission (ERE).  More details
+								on my thesis and a short description of the Pioneer IPP instrument (and
+								references) can be found in <a href="https://ui.adsabs.harvard.edu/abs/1998ApJ...498..522G/abstract">
+								Gordon et al. 1998, ApJ, 498, 522</a>.</p>
+
+							<p>As part of the work for my PhD thesis, I created full sky images from the
+								Pioneer 10/11 IPP data.  This was the first time images were created from the
+								IPP data.  Previously, IPP analyzes used the raw measurements or contour plots.
+								One benefit of creating images from the data is the ability to combine multiple
+								maps (11 - all taken outside the zodiacal dust cloud)
+								to improve the S/N and (through a MCM algorithm) improve the resolution.
+								The data for the 1st iteration (straight coadd) and 10th iteration of the MCM algorithm
+								(improve resolution, but more structure noise as well).  Most people will want to
+								use the 1st iteration (straight coadd).  The full Pioneer 10/11 IPP datasets (including
+								the data taken inside the zodiacal dust cloud) is available, send me a request.</p>
+
+								<p>
+								The units of the images are S10(G2V).  See
+								<a href="https://ui.adsabs.harvard.edu/abs/1998ApJ...498..522G/abstract">
+								Gordon et al. 1998, ApJ, 498, 522</a> for the transformations to more
+								common units.
+								</p>
+
+								<table>
+								<tbody>
+								<tr>
+								<td>Pioneer B Band (&lambda; = 4370 &Aring;, &Delta;&lambda; = 826 &Aring;)</td>
+								<td>Pioneer R Band (&lambda; = 6441 &Aring;, &Delta;&lambda; = 968 &Aring;)</td>
+								</tr>
+								<tr>
+								<td><img src="images/P_all_1_B_aitoff.png" alt="Pioneer 10/11 B image" /></td>
+								<td><img src="images/P_all_1_R_aitoff.png" alt="Pioneer 10/11 R image" /></td>
+								</tr>
+								<tr>
+								<td><a href="http://www.stsci.edu/~kgordon/pioneer_ipp/P_all_1_B.fits">1st iteration FITS file</a></td>
+								<td><a href="http://www.stsci.edu/~kgordon/pioneer_ipp/P_all_1_R.fits">1st iteration FITS file</a></td>
+								</tr>
+								<tr>
+								<td><a href="http://www.stsci.edu/~kgordon/pioneer_ipp/P_all_10_B.fits">10th iteration FITS file</a></td>
+								<td><a href="http://www.stsci.edu/~kgordon/pioneer_ipp/P_all_10_R.fits">10th iteration FITS file</a></td>
+								</tr>
+								</tbody>
+								</table>
+
+								<h3>Pioneer 10/11 Data</h3>
+
+								Various forms of the IPP data are given:
+
+								<ul>
+								<li><a href="http://dirty.as.arizona.edu/~kgordon/research/pioneer_10_11_rawdata.tar.gz">
+								Data as received from NSSDC</a>: ASCII format, but detailed knowledge of the different fields
+								needed to decode.</li>
+								<li><a href="http://dirty.as.arizona.edu/~kgordon/research/pioneer_10_11_w_allstars_25feb09.tar.gz">
+								Reformated data w/ all stars</a>: ASCII format, extracted data with README file for decoding.  Does not
+								include all the data as received from NSSDC, but what is needed to make maps.</li>
+								</ul>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Karl D. Gordon. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
