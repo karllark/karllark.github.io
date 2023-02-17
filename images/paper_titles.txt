@@ -1,0 +1,53 @@
+The James Webb Space Telescope Absolute Flux Calibration. I. Program Design and Calibrator Stars
+
+Milky Way Mid-Infrared Spitzer Spectroscopic Extinction Curves: Continuum and Silicate Features
+
+TRUST. I. A 3D externally illuminated slab benchmark for dust radiative transfer
+
+
+The Panchromatic Hubble Andromeda Treasury. XV. The BEAST: Bayesian Extinction and Stellar Tool
+
+The Mid-Infrared Instrument for the James Webb Space Telescope, X: Operations and Data Reduction
+
+Dust and Gas in the Magellanic Clouds from the HERITAGE Herschel Key Project. I. Dust Properties and Insights into the Origin of the Submillimeter Excess Emission
+
+
+Surveying the Agents of Galaxy Evolution in the Tidally Stripped, Low Metallicity Small Magellanic Cloud (SAGE-SMC). I. Overview
+
+Determining dust temperatures and masses in the Herschel era: The importance of observations longward of 200 micron
+
+FUSE Measurements of Far-Ultraviolet Extinction. III. The Dependence on R(V) and Discrete Feature Limits from 75 Galactic Sightlines
+
+The Dust-to-Gas Ratio in the Small Magellanic Cloud Tail
+
+The Behavior of the Aromatic Features in M101 H II Regions: Evidence for Dust Processing
+
+Absolute Calibration and Characterization of the Multiband Imaging Photometer for Spitzer. II. 70 μm Imaging
+
+Spitzer MIPS Infrared Imaging of M31: Further Evidence for a Spiral-Ring Composite Structure
+
+Reduction Algorithms for the Multiband Imaging Photometer for Spitzer
+
+Spatially Resolved Ultraviolet, Hα, Infrared, and Radio Star Formation in M81
+
+A Quantitative Comparison of the Small Magellanic Cloud, Large Magellanic Cloud, and Milky Way Ultraviolet to Near-Infrared Extinction Curves
+
+The DIRTY Model. I. Monte Carlo Radiative Transfer through Dust
+
+Dust Emission Features in NGC 7023 between 0.35 and 2.5 Microns: Extended Red Emission (0.7 Microns) and Two New Emission Features (1.15 and 1.5 Microns)
+
+The Flux Ratio Method for Determining the Dust Attenuation of Starburst Galaxies
+
+The Dusty Starburst Nucleus of M33
+
+Starburst-like Dust Extinction in the Small Magellanic Cloud
+
+The Spectroscopic Orbit of the Evolved Binary HD 197770
+
+Detection of Extended Red Emission in the Diffuse Interstellar Medium
+
+Dust in Starburst Galaxies
+
+Zeta2 Coronae Borealis, A Spectroscopic Triple System Including an Asynchronous Close Binary
+
+The Far-Ultraviolet Dust Albedo in the Upper Scorpius Subgroup of the Scorpius OB2 Association
