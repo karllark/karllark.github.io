@@ -1,0 +1,573 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>DIRTY Spherical Galactic Environments</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Karl D. Gordon</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">DIRTY Spherical Galactic Environment Calculations</h1>
+
+							<p>
+								The DIRTY model (
+									<a href="https://scixplorer.org/abs/2001ApJ...551..269G/abstract">Gordon et al. (2001)</a>,
+									<a href="https://scixplorer.org/abs/2001ApJ...551..277M/abstract">Misselt et al. (2001)</a>,
+									<a href="https://scixplorer.org/abs/2018ApJS..236...32L/abstract">Law et al. (2018)</a>,
+									)
+								was used to investigate the impact of non-homogeneous dust distributions 
+								on the extinguished and scatter light from systems of stars and dust.  The DIRTY model was the 
+								first to investigate such effects in full 3D.
+								<a href="https://scixplorer.org/abs/1996ApJ...463..681W/abstract">Witt & Gordon (1996)</a> 
+								investigated the simple case of a star surrounded by a sphere of dust, where the dust was
+								distributed homogeneously or with clumps with varying sizes, filling factors, and clump/inter-clump
+								density ratios.  
+								<a href="https://scixplorer.org/abs/2000ApJ...528..799W/abstract">Witt & Gordon (2000)</a>
+								used Spherical Galactic Environments (SGEs) to investigate how clumpy dust impacted the 
+								wavelength dependence of attenuation on regions of galaxies.  The SGEs were introduced
+								by <a href="https://scixplorer.org/abs/1992ApJ...393..611W/abstract"></a>Witt, Thronson, and Capuano (1992)</a>
+								where only smooth (non-clumpy) dust distributions were studied.
+
+								<figure>
+								<img src="images/lgm18_sges.jpg" alt="CLOUDY, DUSTY, and SHELL SGEs">
+								<figcaption>Cuts through CLOUDY, DUSTY, and SHELL SGEs (left to right) with a clumpy dust distribution.</figcaption>
+								</figure>
+							</p>
+						</div>
+
+						<div class="inner">
+							<h2 class="major">Original Tables</h2>
+
+							<p>
+								Tables 2-4 of <a href="https://scixplorer.org/abs/2000ApJ...528..799W/abstract">Witt & Gordon (2000)</a>.
+
+								<table align="center" cellpadding="2" cellspacing="5" border="5">
+								<tbody>
+								<tr align="center"><th>Table 2</th><th>Table 3</th><th>Table 4</th></tr>
+								<tr align="center"><td>Dusty</td><td>Shell</td><td>Cloudy</td></tr>
+								<tr align="center"><td><a href="dirty_data/clumpyII/table2_dusty.dat">ASCII</a></td>
+								<td><a href="dirty_data/clumpyII/table3_shell.dat">ASCII</a></td>
+								<td><a href="dirty_data/clumpyII/table4_cloudy.dat">ASCII</a></td></tr>
+								<tr align="center">
+									<td><a href="dirty_data/clumpyII/clumpyII_dusty_h_mw.gif"><img src="dirty_data/clumpyII/clumpyII_dusty_h_mw_tb.gif" alt="attenuation plot" /></a>
+									<a href="dirty_data/clumpyII/clumpyII_dusty_c4_mw.gif"><img src="dirty_data/clumpyII/clumpyII_dusty_c4_mw_tb.gif" alt="attenuation plot" /></a><br />
+									<a href="dirty_data/clumpyII/clumpyII_dusty_h_smc.gif"><img src="dirty_data/clumpyII/clumpyII_dusty_h_smc_tb.gif" alt="attenuation plot" /></a>
+									<a href="dirty_data/clumpyII/clumpyII_dusty_c4_smc.gif"><img src="dirty_data/clumpyII/clumpyII_dusty_c4_smc_tb.gif" alt="attenuation plot" /></a></td>
+									<td><a href="dirty_data/clumpyII/clumpyII_shell_h_mw.gif"><img src="dirty_data/clumpyII/clumpyII_shell_h_mw_tb.gif" alt="attenuation plot" /></a>
+									<a href="dirty_data/clumpyII/clumpyII_shell_c4_mw.gif"><img src="dirty_data/clumpyII/clumpyII_shell_c4_mw_tb.gif" alt="attenuation plot" /></a><br />
+									<a href="dirty_data/clumpyII/clumpyII_shell_h_smc.gif"><img src="dirty_data/clumpyII/clumpyII_shell_h_smc_tb.gif" alt="attenuation plot" /></a>
+									<a href="dirty_data/clumpyII/clumpyII_shell_c4_smc.gif"><img src="dirty_data/clumpyII/clumpyII_shell_c4_smc_tb.gif" alt="attenuation plot" /></a></td>
+									<td><a href="dirty_data/clumpyII/clumpyII_cloudy_h_mw.gif"><img src="dirty_data/clumpyII/clumpyII_cloudy_h_mw_tb.gif" alt="attenuation plot" /></a>
+									<a href="dirty_data/clumpyII/clumpyII_cloudy_c4_mw.gif"><img src="dirty_data/clumpyII/clumpyII_cloudy_c4_mw_tb.gif" alt="attenuation plot" /></a><br />
+									<a href="dirty_data/clumpyII/clumpyII_cloudy_h_smc.gif"><img src="dirty_data/clumpyII/clumpyII_cloudy_h_smc_tb.gif" alt="attenuation plot" /></a>
+									<a href="dirty_data/clumpyII/clumpyII_cloudy_c4_smc.gif"><img src="dirty_data/clumpyII/clumpyII_cloudy_c4_smc_tb.gif" alt="attenuation plot" /></a></td>
+								</tr>
+								</tbody>
+								</table>
+							</p>
+
+						</div>
+
+						<div class="inner">
+							<h2 class="major">Full Original Data</h2>
+
+							<p>
+								Full original data for <a href="https://scixplorer.org/abs/2000ApJ...528..799W/abstract">Witt & Gordon (2000)</a> with an expanded
+								set of dust density ratios.  The format of these files is different than those in Tables 2-4 given above.
+
+								<table align="center" cellpadding="3" border="2">
+								<tbody>
+								<tr><th>SGE, dust-type</th><th colspan="7">k<sub>2</sub>/k<sub>1</sub> (density ratio)</th></tr>
+
+								<tr>
+								<td>SHELL, MW</td>
+								<td><a href="dirty_data/clumpyII/gal_shell_h_mw.table">1.000 (homogeneous)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c1_mw.table">0.500</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c2_mw.table">0.100</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c3_mw.table">0.050</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c4_mw.table">0.010 (clumpy)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c5_mw.table">0.005</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c6_mw.table">0.001</a></td>
+								</tr>
+
+								<tr>
+								<td>SHELL, SMC</td>
+								<td><a href="dirty_data/clumpyII/gal_shell_h_smc.table">1.000 (homogeneous)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c1_smc.table">0.500</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c2_smc.table">0.100</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c3_smc.table">0.050</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c4_smc.table">0.010 (clumpy)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c5_smc.table">0.005</a></td>
+								<td><a href="dirty_data/clumpyII/gal_shell_c6_smc.table">0.001</a></td>
+								</tr>
+
+								<tr>
+								<td>DUSTY, MW</td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_h_mw.table">1.000 (homogeneous)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c1_mw.table">0.500</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c2_mw.table">0.100</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c3_mw.table">0.050</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c4_mw.table">0.010 (clumpy)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c5_mw.table">0.005</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c6_mw.table">0.001</a></td>
+								</tr>
+
+								<tr>
+								<td>DUSTY, SMC</td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_h_smc.table">1.000 (homogeneous)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c1_smc.table">0.500</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c2_smc.table">0.100</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c3_smc.table">0.050</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c4_smc.table">0.010 (clumpy)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c5_smc.table">0.005</a></td>
+								<td><a href="dirty_data/clumpyII/gal_dusty_c6_smc.table">0.001</a></td>
+								</tr>
+
+								<tr>
+								<td>CLOUDY, MW</td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_h_mw.table">1.000 (homogeneous)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c1_mw.table">0.500</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c2_mw.table">0.100</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c3_mw.table">0.050</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c4_mw.table">0.010 (clumpy)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c5_mw.table">0.005</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c6_mw.table">0.001</a></td>
+								</tr>
+
+								<tr>
+								<td>CLOUDY, SMC</td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_h_smc.table">1.000 (homogeneous)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c1_smc.table">0.500</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c2_smc.table">0.100</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c3_smc.table">0.050</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c4_smc.table">0.010 (clumpy)</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c5_smc.table">0.005</a></td>
+								<td><a href="dirty_data/clumpyII/gal_cloudy_c6_smc.table">0.001</a></td>
+								</tr>
+
+								</tbody>
+								</table>
+							</p>
+
+						</div>
+
+						<div class="inner">
+							<h2 class="major">Expansion to LMC2 type dust and more SHELL optical depths</h2>
+
+							<p>
+								Expansion to include LMC2 type dust and a larger range of optical depths for the SHELL SGE. 
+								The format of these files is different than those in Tables 2-4 given above.
+							</p>
+
+							<table align="center" cellpadding="3" border="2">
+							<tbody>
+							<tr><th>SGE, dust-type</th><th colspan="7">k<sub>2</sub>/k<sub>1</sub> (density ratio)</th></tr>
+
+							<!--
+							<tr>
+							<td>SHELL, MW</td>
+							<td><a href="gal_shell_h_mw.table">1.000 (homogeneous)</a></td>
+							<td><a href="gal_shell_c1_mw.table">0.500</a></td>
+							<td><a href="gal_shell_c2_mw.table">0.100</a></td>
+							<td><a href="gal_shell_c3_mw.table">0.050</a></td>
+							<td><a href="gal_shell_c4_mw.table">0.010 (clumpy)</a></td>
+							<td><a href="gal_shell_c5_mw.table">0.005</a></td>
+							<td><a href="gal_shell_c6_mw.table">0.001</a></td>
+							</tr>
+							-->
+
+							<tr>
+							<td>SHELL, LMC2</td>
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_lmc2_k1.000.table">1.000 (homogeneous)</a></td>
+							<!--					          
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_lmc2_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_lmc2_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_lmc2_k0.050.table">0.050</a></td>
+							-->
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_lmc2_k0.010.table">0.010 (clumpy)</a></td>
+							<!--					          
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_lmc2_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_lmc2_k0.001.table">0.001</a></td>
+							-->
+							</tr>
+
+							<tr>
+							<td>SHELL, SMC</td>
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_smc_k1.000.table">1.000 (homogeneous)</a></td>
+							<!--					          
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_smc_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_smc_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_smc_k0.050.table">0.050</a></td>
+							-->
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_smc_k0.010.table">0.010 (clumpy)</a></td>
+							<!--					          
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_smc_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_shell_empir_smc_k0.001.table">0.001</a></td>
+							-->
+							</tr>
+
+							<!--					          
+							<tr>
+							<td>DUSTY, MW</td>
+							<td><a href="gal_dusty_h_mw.table">1.000 (homogeneous)</a></td>
+							<td><a href="gal_dusty_c1_mw.table">0.500</a></td>
+							<td><a href="gal_dusty_c2_mw.table">0.100</a></td>
+							<td><a href="gal_dusty_c3_mw.table">0.050</a></td>
+							<td><a href="gal_dusty_c4_mw.table">0.010 (clumpy)</a></td>
+							<td><a href="gal_dusty_c5_mw.table">0.005</a></td>
+							<td><a href="gal_dusty_c6_mw.table">0.001</a></td>
+							</tr>
+							-->
+
+							<!--					          
+							<tr>
+							<td>DUSTY, LMC2</td>
+							<td><a href="dirty_data/clumpyII_2005/gal_dusty_empir_lmc2_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_dusty_empir_lmc2_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_dusty_empir_lmc2_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_dusty_empir_lmc2_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_dusty_empir_lmc2_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_dusty_empir_lmc2_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_dusty_empir_lmc2_k0.001.table">0.001</a></td>
+							-->
+							</tr>
+
+							<!--
+							<tr>
+							<td>DUSTY, SMC</td>
+							<td><a href="dirty_data/clumpyII_2005/gal_dusty_h_smc.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_dusty_c1_smc.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_dusty_c2_smc.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_dusty_c3_smc.table">0.050</a></td>
+							<td><a href="gal_dusty_c4_smc.table">0.010 (clumpy)</a></td>
+							<td><a href="gal_dusty_c5_smc.table">0.005</a></td>
+							<td><a href="gal_dusty_c6_smc.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>CLOUDY, MW</td>
+							<td><a href="gal_cloudy_h_mw.table">1.000 (homogeneous)</a></td>
+							<td><a href="gal_cloudy_c1_mw.table">0.500</a></td>
+							<td><a href="gal_cloudy_c2_mw.table">0.100</a></td>
+							<td><a href="gal_cloudy_c3_mw.table">0.050</a></td>
+							<td><a href="gal_cloudy_c4_mw.table">0.010 (clumpy)</a></td>
+							<td><a href="gal_cloudy_c5_mw.table">0.005</a></td>
+							<td><a href="gal_cloudy_c6_mw.table">0.001</a></td>
+							</tr>
+							-->
+
+							<tr>
+							<td>CLOUDY, LMC2</td>
+							<td><a href="dirty_data/clumpyII_2005/gal_cloudy_empir_lmc2_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_cloudy_empir_lmc2_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_cloudy_empir_lmc2_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_cloudy_empir_lmc2_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_cloudy_empir_lmc2_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_cloudy_empir_lmc2_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_2005/gal_cloudy_empir_lmc2_k0.001.table">0.001</a></td>
+							</tr>
+
+							<!--					          
+							<tr>
+							<td>CLOUDY, SMC</td>
+							<td><a href="gal_cloudy_h_smc.table">1.000 (homogeneous)</a></td>
+							<td><a href="gal_cloudy_c1_smc.table">0.500</a></td>
+							<td><a href="gal_cloudy_c2_smc.table">0.100</a></td>
+							<td><a href="gal_cloudy_c3_smc.table">0.050</a></td>
+							<td><a href="gal_cloudy_c4_smc.table">0.010 (clumpy)</a></td>
+							<td><a href="gal_cloudy_c5_smc.table">0.005</a></td>
+							<td><a href="gal_cloudy_c6_smc.table">0.001</a></td>
+							</tr>
+							-->
+
+							</tbody>
+							</table>
+
+						</div>
+
+						<div class="inner">
+							<h2 class="major">Weingartner & Draine (2001) dust grain properties</h2>
+
+							<p>
+							These model runs use the <a href="https://scixplorer.org/abs/2001ApJ...548..296W/abstract">
+							Weingartner &amp; Draine 2001, ApJ, 548, 296</a> dust grain models for MW, LMC2, and SMC dust.  
+							The dust grain model scattering parameters were downloaded from
+							<a href="http://www.astro.princeton.edu/~draine/index.html">Bruce Draine's homepage</a>.  
+							They also cover a wider range of
+							wavelengths (0.05 - 3 microns) than the 
+							<a href="https://scixplorer.org/abs/1996ApJ...463..681W/abstract">Witt & Gordon (1996)</a>
+							models which used empirically determined dust scattering properties.
+							</p>
+
+							<p>
+							<em>The
+							inputs are significantly different than those used in the original 
+							tables and are probably not as valid as those used in that paper.  
+							Dust grain models do not use the known dust scattering properties
+							as constraints and, thus, do not do a good job reproducing them.</em>
+							It is not clear which dust grain model inputs 
+							should be used, especially in the case of SMC or LMC type dust or
+							at wavelengths where the empirical work has not been done.  For the MW runs, the empirical
+							dust grain inputs (original calculations) are the recommended inputs.  More work is obviously 
+							needed on both empirically determining dust grain scattering inputs in other galaxies as well
+							as improving the dust grain models to include the empirical work on dust scattering
+							properties.
+							</p>
+
+							<table align="center" cellpadding="3" border="2">
+							<tbody>
+							<tr><th>SGE, dust-type</th><th colspan="7">k<sub>2</sub>/k<sub>1</sub> (density ratio)</th></tr>
+
+							<tr>
+							<td>SHELL, MW</td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdmw_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdmw_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdmw_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdmw_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdmw_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdmw_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdmw_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>SHELL, LMC2</td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdlmc2_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdlmc2_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdlmc2_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdlmc2_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdlmc2_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdlmc2_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdlmc2_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>SHELL, SMC</td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdsmc_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdsmc_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdsmc_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdsmc_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdsmc_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdsmc_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_shell_wdsmc_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>DUSTY, MW</td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdmw_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdmw_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdmw_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdmw_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdmw_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdmw_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdmw_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>DUSTY, LMC2</td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdlmc2_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdlmc2_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdlmc2_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdlmc2_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdlmc2_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdlmc2_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdlmc2_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>DUSTY, SMC</td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdsmc_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdsmc_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdsmc_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdsmc_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdsmc_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdsmc_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_wd2001/gal_dusty_wdsmc_k0.001.table">0.001</a></td>
+							</tr>
+
+							</tbody>
+							</table>
+
+						</div>
+
+						<div class="inner">
+							<h2 class="major">Clayton et al. (2003) dust grain properties</h2>
+
+							<p>These model runs use the 
+							<a href="https://scixplorer.org/abs/2003ApJ...588..871C/abstract">Clayton et al. (2003)</a>
+							dust grain models for MW, LMC2, and SMC dust.  They also cover a wider range of
+							wavelengths (0.08 - 1000 microns) than the 
+							<a href="https://scixplorer.org/abs/1996ApJ...463..681W/abstract">Witt &amp; Gordon (2000)</a>
+							models which used empirically determined dust scattering properties. 
+							</p> 
+							
+							<p><em>The
+							inputs are significantly different than those used in the original 
+							tables and are probably not as valid as those used in that paper.  
+							Dust grain models do not use the known dust scattering properties
+							as constraints and, thus, do not do a good job reproducing them.</em>
+							It is not clear which dust grain model inputs 
+							should be used, especially in the case of SMC or LMC type dust or
+							at wavelengths where the empirical work has not been done.  For the MW runs, the empirical
+							dust grain inputs (original calculations) are the recommended inputs.  More work is obviously 
+							needed on both empirically determining dust grain scattering inputs in other galaxies as well
+							as improving the dust grain models to include the empirical work on dust scattering
+							properties.
+							</p>
+
+							<table align="center" cellpadding="3" border="2">
+							<tbody>
+							<tr><th>geometry, dust-type</th><th colspan="7">k<sub>2</sub>/k<sub>1</sub> (density ratio)</th></tr>
+
+							<tr>
+							<td>SHELL, MW</td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3mw_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3mw_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3mw_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3mw_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3mw_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3mw_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3mw_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>SHELL, LMC2</td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3lmc2_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3lmc2_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3lmc2_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3lmc2_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3lmc2_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3lmc2_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3lmc2_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>SHELL, SMC</td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3smc_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3smc_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3smc_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3smc_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3smc_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3smc_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_shell_3smc_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>DUSTY, MW</td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3mw_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3mw_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3mw_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3mw_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3mw_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3mw_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3mw_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>DUSTY, LMC2</td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3lmc2_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3lmc2_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3lmc2_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3lmc2_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3lmc2_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3lmc2_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3lmc2_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>DUSTY, SMC</td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3smc_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3smc_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3smc_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3smc_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3smc_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3smc_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_dusty_3smc_k0.001.table">0.001</a></td>
+							</tr>
+
+
+							<tr>
+							<td>CLOUDY, MW</td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3mw_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3mw_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3mw_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3mw_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3mw_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3mw_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3mw_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>CLOUDY, LMC2</td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3lmc2_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3lmc2_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3lmc2_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3lmc2_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3lmc2_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3lmc2_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3lmc2_k0.001.table">0.001</a></td>
+							</tr>
+
+							<tr>
+							<td>CLOUDY, SMC</td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3smc_k1.000.table">1.000 (homogeneous)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3smc_k0.500.table">0.500</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3smc_k0.100.table">0.100</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3smc_k0.050.table">0.050</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3smc_k0.010.table">0.010 (clumpy)</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3smc_k0.005.table">0.005</a></td>
+							<td><a href="dirty_data/clumpyII_c03/gal_cloudy_3smc_k0.001.table">0.001</a></td>
+							</tr>
+
+							</tbody>
+							</table>
+
+						</div>
+
+					</section>
+
+			</div>
+
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Karl D. Gordon. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
